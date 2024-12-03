@@ -3,9 +3,8 @@
     box-sizing: border-box;
     line-height: 26px;
     line-height: 1.625rem;
-    margin: 0px 0px 26px;
-    margin: 0rem 0rem 1.625rem;
-
+    /* margin: 0px 0px 26px; */
+    margin: 0;
 }
 body{
     font-family: Open Sans, Arial, Helvetica, Sans-serif;
@@ -81,10 +80,9 @@ nav ul {
     border-radius: 3px;
     padding: 1rem;
     position: relative;
-    margin: 2;
+    margin: 0px 0px 26px;
 }
 main {
-    
     grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
     margin: 0 auto;
     width: 90%;
@@ -92,7 +90,7 @@ main {
     grid-column-gap: 2rem;
     grid-column-gap: 2rem;
     grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
-    gap: 2;
+    margin-top: 2rem;
 }
 .caixa{
     background-image: url(/img/tiny_grid.png);
@@ -100,6 +98,7 @@ main {
     border-radius: 3px;
     padding: 1rem;
     position: relative;
+    margin: 0px 0px 26px;
 }
 .video-tutorial.caixa {
     grid-column: auto / span 2;
@@ -110,30 +109,51 @@ main {
     color: #fff;
     padding: 1rem;
     position: relative;
+    margin: 0px 0px 26px;
 }
 .examples.caixa {
     grid-column: auto / span 2;
+    margin: 0px 0px 26px;
 }
 .patterns.caixa {
     grid-column: auto / span 3;
+    margin: 0px 0px 26px;
 }
 .resources.caixa {
     grid-column: auto / span 3;
+    margin: 0px 0px 26px;
 }
 .css-layout.caixa {
     grid-column: auto / span 2;
+    margin: 0px 0px 26px;
 }
 .questions.caixa {
     grid-column: auto / span 2;
+    margin: 0px 0px 26px;
 }
 .about-css-grid.caixa {
     grid-column: auto / span 1;
+    margin: 0px 0px 26px;
 }
 .news.caixa {
     grid-column: auto / span 2;
+    margin: 0px 0px 26px;
 }
 .grid-bugs.caixa {
     grid-column: 1 / -1;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.98);
+    background-image: url(/img/inflicted.png);
+    color: #000;
+    padding: 1rem 0;
+    margin: 4rem 0 0 0;
+    font-size: 85%;
+}
+footer .div-wrapper {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1rem;
+    border-radius: 3px;
 }
 @media screen and (min-width: 640px){
     ul{
@@ -142,4 +162,36 @@ main {
     main{
         display: grid;
     }
+}
+a {
+    text-decoration: underline;
+    color: white;
+}
+footer a {
+    color: black;
+}
+.examples.caixa::before {
+    content: "New!";
+    background-color: #087f23;
+    position: absolute;
+    top: -.8rem;
+    left: -.8rem;
+    padding: .3rem .5rem;
+    display: inline-block;
+    color: #fff;
+    font-weight: both;
+    transform: rotate(-20deg);
+}
+h2 {
+    font-size: 27px;
+    font-size: 1.6875rem;
+    line-height: 2.4375rem;
+    margin-top: 11px;
+    
+}
+main h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    line-height: 52px;
+    line-height: 3.25rem;
 }
