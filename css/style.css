@@ -69,3 +69,17 @@ nav ul {
     right: 20px;
     width: 15%;
 }
+.grid-layout {
+    grid-column: 1 / 4;
+    background-image: url(/img/inflicted.png);
+    color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 1rem;
+    position: relative;
+}
+main {
+    display: grid
+;
+    grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+}
