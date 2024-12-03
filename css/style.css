@@ -53,7 +53,6 @@ nav a:hover:link, nav a:hover:visited {
     background-color: rgba(255, 255, 255, 0.6);
 }
 nav ul {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     list-style-type: none;
     width: 90%;
@@ -85,13 +84,12 @@ nav ul {
     margin: 2;
 }
 main {
-    display: grid;
+    
     grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
     margin: 0 auto;
     width: 90%;
     max-width: 1600px;
     grid-column-gap: 2rem;
-    display: grid;
     grid-column-gap: 2rem;
     grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
     gap: 2;
@@ -133,4 +131,15 @@ main {
 }
 .news.caixa {
     grid-column: auto / span 2;
+}
+.grid-bugs.caixa {
+    grid-column: 1 / -1;
+}
+@media screen and (min-width: 640px){
+    ul{
+        display: grid;
+    }
+    main{
+        display: grid;
+    }
 }
