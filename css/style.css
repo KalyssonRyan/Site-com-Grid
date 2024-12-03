@@ -63,8 +63,9 @@ nav ul {
     max-width: 1600px;
     margin-bottom: 2rem;
 }
-.seguir img{
+.seguir img {
     position: absolute;
     top: 20px;
     right: 20px;
+    width: 15%;
 }
